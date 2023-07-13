@@ -1,0 +1,143 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border: none;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+#theory {
+  display: none;
+  margin: 0 auto;
+}
+
+.input-theory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.instruction-container {
+  display: none;
+}
+.calculator-description {
+  width: 75%;
+  margin-top: 20px;
+  border: 2px solid rgb(173, 168, 168);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main {
+  border: 2px solid rgb(173, 168, 168);
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 18px 21px -4px rgba(0, 0, 0, 0.47);
+}
+
+.switch-buttons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.switch-btn {
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.calculator-container {
+  background-color: #dddddd;
+  height: 160px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: -3px 9px 21px 8px rgba(0, 0, 0, 0.47);
+}
+
+.input {
+  width: 100px;
+  height: 20px;
+  box-shadow: 0px -5px 35px -4px rgba(0, 0, 0, 0.47);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+.form-span {
+  width: 40px;
+  height: 20px;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.input-title {
+  font-style: italic;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  left: 10px;
+}
+
+.input-description {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.theory-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.instruction {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.js-btn-result {
+  font-size: 24px;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 463px) {
+  .calculator-container {
+    width: 80%;
+  }
+}

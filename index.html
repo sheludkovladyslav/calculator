@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Онлайн калькулятор. Додавання і віднімання стовпчиком</h1>
+      <p class="calculator-description">
+        Цей онлайн калькулятор допоможе вам зрозуміти, як додавати і віднімати
+        цілі числа та десяткові дроби стовпчиком. Калькулятор додавання і
+        віднімання стовпчиком дуже просто і швидко знайде суму або різницю і
+        видасть детальний розв'язок задачі.
+      </p>
+    </header>
+    <main class="main">
+      <div class="calculator-wrapper">
+        <ul class="switch-buttons">
+          <li class="switch-btn">
+            <button
+              type="button"
+              onclick="document.getElementById('calculator').style.display = 'flex', document.getElementById('theory').style.display = 'none', document.getElementById('instruction').style.display = 'none'"
+            >
+              Калькулятор
+            </button>
+          </li>
+          <li class="switch-btn">
+            <button
+              type="button"
+              onclick="document.getElementById('theory').style.display = 'flex', document.getElementById('calculator').style.display = 'none', document.getElementById('instruction').style.display = 'none'"
+            >
+              Теорія
+            </button>
+          </li>
+          <li class="switch-btn">
+            <button
+              type="button"
+              onclick="document.getElementById('calculator').style.display = 'none', document.getElementById('theory').style.display = 'none', document.getElementById('instruction').style.display = 'flex'"
+            >
+              Інструкція
+            </button>
+          </li>
+        </ul>
+        <section class="calculator-container" id="calculator">
+          <h2 class="calculator-title"></h2>
+          <div class="calculator">
+            <div action="" class="input-form">
+              <input type="number" class="input js-number-a" />
+              <select
+                name=""
+                id="plus-minus"
+                class="form-span input js-select-operation"
+              >
+                <option value="+">+</option>
+                <option value="-">-</option>
+              </select>
+              <input type="number" class="input js-number-b" />
+              <button class="js-btn-result">=</button>
+              <p class="js-output"></p>
+            </в>
+          </div>
+        </section>
+      </div>
+      <div class="theory-container" id="theory">
+        <section class="input-theory">
+          <h2 class="input-title">
+            Ввід даних в калькулятор для додавання і віднімання в стовпчик
+          </h2>
+          <p class="input-description">
+            В онлайн калькулятор можна вводити натуральні числа або десяткові
+            дроби.
+          </p>
+        </section>
+        <section class="input-theory">
+          <h2 class="input-title">
+            Додаткові можливості калькулятора для додавання і віднімання в
+            стовпчик
+          </h2>
+          <p class="input-description">
+            Використовуйте кнопки , на клавіатурі, для переміщення між полями
+            калькулятору.
+          </p>
+        </section>
+        <section class="input-theory">
+          <h2 class="input-title">
+            Інструкція використання калькулятора для додавання і віднімання в
+            стовпчик
+          </h2>
+          <p class="input-description">
+            Для обчислень достатньо ввести числа (цілі або десяткові дроби),
+            обрати математичну операцію (сума або різниці) і натиснути кнопку
+            "=".
+          </p>
+        </section>
+      </div>
+      <div class="instruction-container" id="instruction">
+        <section class="instruction">
+          <section class="card">
+            <h2 class="card-title">Додавання в стовпчик</h2>
+            <p class="card-description">
+              Два числа, що складаються з двох або більшої кількості цифр,
+              зручно використовувати додавання в стовпчик. Для цього запишемо
+              числа одне під іншим з дотриманням розрядів. Додавання
+              відбувається з права на ліво: спочатку знаходиться сума одиниць,
+              далі десятків, сотень і так далі. Сума кожного стовпчика
+              записується під ним. якщо сума стовпчика складається з двох цифр,
+              перша з них додається до наступного стовпчика.
+            </p>
+          </section>
+          <section class="card">
+            <h2 class="card-title">Віднімання в стовпчик</h2>
+            <p class="card-description">
+              Два числа, що складаються з двох або більшої кількості цифр,
+              зручно використовувати віднімання в стовпчик. Для цього запишемо
+              числа одне під іншим з дотриманням розрядів. Віднімання
+              відбувається з права на ліво: спочатку знаходиться різниця
+              одиниць, далі десятків, сотень і так далі. Різниця кожного
+              стовпчика записується під ним. За необхідністю із сусіднього
+              лівого стовпчика (тобто із старшого розряду) береться 1.
+            </p>
+          </section>
+        </section>
+      </div>
+    </main>
+    <script src="math.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
