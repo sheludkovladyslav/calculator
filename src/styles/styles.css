@@ -23,6 +23,7 @@ button {
   font-weight: inherit;
   font-size: inherit;
   cursor: pointer;
+  color: inherit;
 }
 
 #theory {
@@ -116,6 +117,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+input {
+  outline: none;
+  background: none;
+  color: inherit;
 }
 
 .instruction {
