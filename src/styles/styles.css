@@ -24,6 +24,15 @@ button {
   font-size: inherit;
   cursor: pointer;
   color: inherit;
+  outline: none;
+}
+
+select {
+  color: inherit;
+}
+
+option {
+  color: inherit;
 }
 
 #theory {
@@ -121,7 +130,6 @@ button {
 
 input {
   outline: none;
-  background: none;
   color: inherit;
 }
 
