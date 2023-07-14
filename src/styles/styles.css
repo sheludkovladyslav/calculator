@@ -25,6 +25,7 @@ button {
   cursor: pointer;
   color: inherit;
   outline: none;
+  background-color: white;
 }
 
 select {
