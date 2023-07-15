@@ -28,6 +28,11 @@ button {
   background-color: white;
 }
 
+.calculator-title {
+  color: blue;
+  margin-bottom: 20px;
+}
+
 select {
   color: inherit;
 }
