@@ -15,3 +15,37 @@ btnResultNode.addEventListener("click", function () {
   });
   OutputNode.innerHTML = result;
 });
+
+inputANode.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowRight") {
+    event.preventDefault();
+    inputBNode.focus();
+  }
+});
+
+inputBNode.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    inputANode.focus();
+  } else if (event.key === "ArrowRight") {
+    event.preventDefault();
+    SelectOperationNode.focus();
+  }
+});
+
+SelectOperationNode.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    inputBNode.focus();
+  } else if (event.key === "ArrowRight") {
+    event.preventDefault();
+    btnResultNode.focus();
+  }
+});
+
+btnResultNode.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    SelectOperationNode.focus();
+  }
+});
